@@ -7,17 +7,19 @@ public class Command {
     private List<String> args;
 
     public Command(String name, List<String> args) {
+        this.name = name;
+        this.args = args;
     }
 
     public String getName() {
-        throw new UnsupportedOperationException();
+        return name;
     }
 
     public List<String> getArgs() {
-        throw new UnsupportedOperationException();
+        return args;
     }
 
     public String getArg(int index) {
-        throw new UnsupportedOperationException();
+        return args.get(index);
     }
 }
